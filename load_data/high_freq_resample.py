@@ -7,7 +7,7 @@ import qlib
 from qlib.data import D
 import copy
 import datetime as dt
-qlib.init_from_yaml_conf('/data/csdesign/qlib_client_config/ycz_high_online.yaml')
+qlib.init()
 
 print('Reading...')
 label_names = ['LABEL0']

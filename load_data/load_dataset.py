@@ -2,8 +2,7 @@ import numpy as np
 import pandas as pd
 
 import qlib
-qlib.init_from_yaml_conf('/home/v-gazh/data_config/origin_online.yaml')
-# qlib.init_from_yaml_conf('/home/v-gazh/data_config/origin_offline.yaml')
+qlib.init()
 from qlib.data import D
 
 def load_dataset(market='csi300'):

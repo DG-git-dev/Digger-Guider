@@ -7,7 +7,7 @@ from tqdm import tqdm
 qlib.init()
 
 
-input_path = '/data1/v-liuyan/project/D_G/out/kdd21/'
+input_path = '/your_own_path/out/'
 r_box = []
 
 STRATEGY_CONFIG = {
