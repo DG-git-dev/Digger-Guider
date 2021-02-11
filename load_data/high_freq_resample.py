@@ -82,4 +82,4 @@ for item in label_names:
 
 df = df.sort_index()
 print(df)
-df.to_pickle('../data/hft_%dm_csi300_till_20201228.pkl'%N)
+df.to_pickle('../data/hft_%dm_csi300.pkl'%N)
