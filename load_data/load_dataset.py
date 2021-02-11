@@ -65,4 +65,4 @@ if __name__ == '__main__':
     df.index = df.index.swaplevel()
     df = df.sort_index()
     
-    df.to_pickle('./data/day_csi300_till_20201228.pkl')
+    df.to_pickle('./data/day_csi300.pkl')
