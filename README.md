@@ -65,6 +65,9 @@
   * Prerequisites:   
   	* Server with qlib
   	* Prediction results 
+  ```linux
+  $ cd ./framework
+  ```
   ```python
   $ python trade_sim.py
   ```
