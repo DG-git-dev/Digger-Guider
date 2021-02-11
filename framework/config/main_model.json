@@ -1,0 +1,78 @@
+{
+  "loader_name": "daily_loader_v3",
+  "model_name": "cnn_rnn_v2",
+  "run_on": false,
+  "seed": 2,
+  "dsets": ["day_csi300_till_20201228", "hft_15m_csi300_till_20201228"],
+  "output_path" : "/your_own_path/framework/out",
+  "daily_loader_v3": {
+    "batch_size": 300,
+    "daily_batch": true,
+    "label_id": "0",
+    "log_transform": false,
+    "pre_n_day": 20,
+    "train_start_date": "2007-02-16",
+    "train_end_date": "2013-12-31",
+    "valid_start_date": "2014-01-01",
+    "valid_end_date": "2015-12-31",
+    "test_start_date": "2016-01-01",
+    "test_end_date": "2020-06-01",
+    "train_shuffle" : true,
+    "DATA_PATH": "/your_own_path/data"
+  },
+
+  "cnn_rnn_v2": {
+    "dropout": 0,
+    "dropout_2": 0.1,
+    "early_stopping_rounds": 5,
+    "eval_metric": "corr",
+    "hid_size": 64,
+    "input_shape": [
+      6,
+      16,
+      20
+    ],
+    "kernel": [
+      4,
+      2,
+      2
+    ],
+    "loss_fn": "mse_v2",
+    "max_steps": 1,
+    "min_dropout": 0.1,
+    "min_early_stopping_rounds": 5,
+    "min_loss_fn": "mse_v2",
+    "min_max_steps": 1,
+    "min_optim_args": {
+      "lr": 1e-3
+    },
+    "min_ratio_teacher": 0.6,
+    "mix_dropout": 0.1,
+    "mix_optim_args": {
+      "lr": 1e-3
+    },
+    "optim_args": {
+      "lr": 1e-3
+    },
+    "optim_args_2": {
+      "lr": 1e-4,
+      "weight_decay": 1e-06
+    },
+    "optim_method": "Adam",
+    "out_chnls": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "rnn_layer": 2,
+    "rnn_type": "GRU",
+    "stride": [
+      4,
+      2,
+      2
+    ],
+    "verbose": 100
+  }
+
+	}  
